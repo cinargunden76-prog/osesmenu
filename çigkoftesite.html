@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Oses Çiğ Köfte Menüsü</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* green-50 */
+            background-image: radial-gradient(circle at 20% 30%, rgba(22, 163, 74, 0.06) 0%, transparent 35%),
+                              radial-gradient(circle at 80% 70%, rgba(5, 150, 105, 0.05) 0%, transparent 40%);
+        }
+        .menu-item {
+            opacity: 0;
+            transform: translateX(-15px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .menu-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center px-4 py-10 md:py-14">
+
+    <!-- Ana Konteyner -->
+    <div class="w-full max-w-2xl mx-auto">
+        
+        <!-- Başlık Alanı -->
+        <div class="text-center mb-10 md:mb-14">
+            <div class="inline-block bg-emerald-600 text-white text-xs font-semibold px-4 py-1.5 rounded-full tracking-wider mb-4 uppercase">
+                Geleneksel Lezzet
+            </div>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-emerald-900 tracking-tight" style="font-family: 'Playfair Display', serif;">
+                Oses Çiğ Köfte
+            </h1>
+            <p class="text-stone-500 text-sm md:text-base mt-3 italic">“Gerçek tadın adresi”</p>
+            <div class="w-20 h-0.5 bg-emerald-500 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Menü Listesi -->
+        <div class="space-y-6">
+            
+            <!-- Ürün 1: Ultra Dürüm (120 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Ultra Dürüm</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">120 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Baharatlı</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">120g Çiğ Köfte, bol malzemeli ve baharatlı dürüm.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺130,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 2: Enfes Dürüm (100 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.05s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Enfes Dürüm</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">100 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Klasik</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">100g Çiğ Köfte, lezzet dolu klasik çiğ köfte dürümü.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺100,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 3: Çiğ Dilim (150 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.1s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Çiğ Dilim</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-lime-100 text-lime-800 text-xs font-medium px-2.5 py-0.5 rounded-full">150 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tabak</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">Dilimlenmiş, bol yeşillik ve limon ile servis edilir.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺170,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 4: Küçük Paket (300 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.15s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Küçük Paket</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">300 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">2 Lavaş</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">300g Çiğ Köfte, 2 Lavaş, Yeşillik, 1 Acı Sos, 1 Çiğ Köfte Sosu.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺250,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 5: Orta Paket (500 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.2s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Orta Paket</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">500 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">4 Lavaş</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">500g Çiğ Köfte, 4 Lavaş, Yeşillik, 2 Acı Sos, 2 Çiğ Köfte Sosu.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺370,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 6: Avantaj Paket (600 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.25s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Avantaj Paket</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">600 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">5 Lavaş</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">600g Çiğ Köfte, 5 Lavaş, Yeşillik, 2 Acı Sos, 2 Çiğ Köfte Sosu.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺400,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 7: Büyük Paket (750 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.3s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Büyük Paket</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">750 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">6 Lavaş</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">750g Çiğ Köfte, 6 Lavaş, Yeşillik, 3 Acı Sos, 3 Çiğ Köfte Sosu.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺530,00</span>
+                </div>
+            </div>
+
+            <!-- Ürün 8: Aile Boyu (1000 g) -->
+            <div class="menu-item bg-white/90 backdrop-blur-sm rounded-xl shadow-md border border-emerald-200/70 p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between transition-all duration-300 hover:shadow-lg" style="transition-delay: 0.35s;">
+                <div class="flex-1">
+                    <h2 class="text-xl md:text-2xl font-semibold text-stone-800">Aile Boyu</h2>
+                    <div class="flex items-center gap-2 mt-1 flex-wrap">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">1000 g</span>
+                        <span class="text-stone-400 text-xs">•</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">8 Lavaş</span>
+                    </div>
+                    <p class="text-stone-500 text-sm mt-2 leading-relaxed">1000g Çiğ Köfte, 8 Lavaş, Yeşillik, 3 Acı Sos, 3 Çiğ Köfte Sosu.</p>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:ml-6 text-right">
+                    <span class="text-3xl md:text-4xl font-extrabold text-emerald-700">₺700,00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Afiyet olsun yazısı (Emoji doğal renginde) -->
+        <div class="mt-12 md:mt-16 text-center">
+            <p class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center" style="font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-lime-600 to-emerald-700">Afiyet olsun</span> 😋
+            </p>
+            <p class="text-stone-500 text-sm mt-2 tracking-wide">Oses Çiğ Köfte – Her lokmada mutluluk</p>
+        </div>
+    </div>
+
+    <script>
+        // Liste öğelerini sırayla görünür yap
+        window.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.menu-item');
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('visible');
+                }, 150 + index * 150);
+            });
+        });
+    </script>
+</body>
+</html>
